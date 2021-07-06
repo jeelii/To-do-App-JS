@@ -1,0 +1,46 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: $petrol-light;
+  color: $dark-dark;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 300;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin-top: 0;
+}
+
+h1,
+h2 {
+  font-weight: 400;
+}
+
+h1 {
+  margin-bottom: 0;
+  color: $highlight;
+  letter-spacing: .1rem;
+  text-transform: uppercase;
+}
+
+h2 {
+  margin-bottom: .5rem;
+}
+
+button {
+  display: inline-block;
+  overflow: visible;
+  border: none;
+  text-transform: none;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+input, button {
+  font-family: inherit;
+}

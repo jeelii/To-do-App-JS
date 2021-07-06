@@ -1,0 +1,17 @@
+header {
+  margin-bottom: 1rem;
+  padding: 1rem;
+  background: $dark-dark;
+  box-shadow: 2px 2px 12px $petrol-dark;
+  color: white;
+  text-align: center;
+}
+
+section {
+  max-width: 480px;
+  margin: auto auto 1rem;
+  padding: 1rem;
+  border-radius: .75rem;
+  background: $highlight;
+  box-shadow: 2px 2px 12px $petrol-dark;
+}

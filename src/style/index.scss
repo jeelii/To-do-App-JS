@@ -1,0 +1,11 @@
+$petrol-dark: #5B7876;
+$petrol-light: #8F9E8B;
+$dark-dark: #292929;
+$highlight: #F2E6B6;
+
+@import "~normalize-scss/sass/normalize";
+@include normalize();
+@import "./_base.scss";
+@import "./_layout.scss";
+@import "./_form.scss";
+@import "./_todo.scss";

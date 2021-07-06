@@ -1,0 +1,35 @@
+{
+  "name": "salt-jsfs-todo",
+  "version": "1.0.0",
+  "description": "## Salt ToDo",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint . --fix",
+    "dev": "webpack-dev-server --hot"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/saltsthlm/salt-jsfs-todo.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/saltsthlm/salt-jsfs-todo/issues"
+  },
+  "homepage": "https://github.com/saltsthlm/salt-jsfs-todo#readme",
+  "devDependencies": {
+    "css-loader": "^5.2.6",
+    "eslint": "^6.7.1",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-import": "^2.23.4",
+    "node-sass": "^6.0.0",
+    "sass-loader": "^10.2.0"
+  },
+  "dependencies": {
+    "mini-css-extract-plugin": "^1.6.0",
+    "normalize-scss": "^7.0.1",
+    "webpack": "^5.39.1",
+    "webpack-cli": "^3.3.10",
+    "webpack-dev-server": "^3.11.2"
+  }
+}
