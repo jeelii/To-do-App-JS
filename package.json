@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "lint": "eslint . --fix",
-    "dev": "webpack-dev-server --hot"
+    "dev": "webpack-dev-server --hot --config webpack.dev.js",
+    "build": "webpack --config webpack.prod.js",
+    "deploy": "gh-pages --dist 'dist' --branch 'release'"
   },
   "repository": {
     "type": "git",
@@ -18,12 +20,17 @@
   },
   "homepage": "https://github.com/saltsthlm/salt-jsfs-todo#readme",
   "devDependencies": {
+    "clean-webpack-plugin": "^4.0.0",
     "css-loader": "^5.2.6",
     "eslint": "^6.7.1",
     "eslint-config-airbnb-base": "^14.0.0",
     "eslint-plugin-import": "^2.23.4",
+    "gh-pages": "^3.2.3",
+    "html-loader": "^2.1.2",
+    "html-webpack-plugin": "^5.3.2",
     "node-sass": "^6.0.0",
-    "sass-loader": "^10.2.0"
+    "sass-loader": "^10.2.0",
+    "webpack-merge": "^5.8.0"
   },
   "dependencies": {
     "mini-css-extract-plugin": "^1.6.0",

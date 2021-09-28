@@ -2,23 +2,19 @@ const webpack = require('webpack');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
-  mode: 'development',
   entry: {
     todo: './src/js/todo.js',
   },
   output: {
     filename: './js/todo.js',
     path: `${__dirname}/dist`,
-    publicPath: '/',
-  },
-  devtool: 'source-map',
-  devServer: {
-    contentBase: './src',
-    hot: true,
-    inline: true,
+    publicPath: '',
   },
   module: {
-    rules: [
+    rules: [{
+        test: /\.html$/,
+        loader: "html-loader",
+      },
       {
         test: /\.(scss)$/,
         use: [MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader'],
@@ -28,7 +24,7 @@ module.exports = {
   plugins: [
     new webpack.HotModuleReplacementPlugin(),
     new MiniCssExtractPlugin({
-      filename: './style/todo.css',
+      filename: 'todo.css',
     }),
   ],
 };
